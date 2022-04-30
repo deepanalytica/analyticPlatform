@@ -15,7 +15,7 @@
       >
         <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd">
           <q-list padding>
-            <q-item clickable v-ripple to="/social">
+            <q-item clickable v-ripple to="/social" active-class="my-menu-link">
               <q-item-section avatar>
                 <q-icon name="people" />
               </q-item-section>
@@ -25,7 +25,7 @@
               </q-item-section>
             </q-item>
 
-            <q-item active clickable v-ripple to="/economic">
+            <q-item active clickable v-ripple to="/economic" active-class="my-menu-link">
               <q-item-section avatar>
                 <q-icon name="star" />
               </q-item-section>
@@ -35,13 +35,23 @@
               </q-item-section>
             </q-item>
 
-            <q-item clickable v-ripple to="/medioambiental">
+            <q-item clickable v-ripple to="/medioambiental" active-class="my-menu-link">
               <q-item-section avatar>
                 <q-icon name="water" />
               </q-item-section>
 
               <q-item-section>
                 Medioambiental
+              </q-item-section>
+            </q-item>
+
+            <q-item clickable v-ripple to="/surveys" active-class="my-menu-link">
+              <q-item-section avatar>
+                <q-icon name="mail" />
+              </q-item-section>
+
+              <q-item-section>
+                Encuestas
               </q-item-section>
             </q-item>
 
@@ -80,3 +90,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.my-menu-link {
+  color: white;
+  background: #F2C037;
+}
+
+</style>

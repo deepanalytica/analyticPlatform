@@ -9,6 +9,7 @@ const routes = [
       { path: '/social', component: () => import('pages/Social.vue') },
       { path: '/medioambiental', component: () => import('pages/Environmental.vue') },
       { path: '/economic', component: () => import('pages/Economic.vue') },
+      { path: '/surveys', component: () => import('src/pages/Surveys.vue') },
     ]
   },
 
